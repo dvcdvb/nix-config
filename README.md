@@ -2,6 +2,10 @@
 
 My personal NixOS configuration using Nix Flakes and Home Manager.
 
+>
+> This configuration is a work in progress.
+> Things may change as I continue improving my setup.
+
 ## Setup
 
 - **OS:** NixOS
@@ -49,7 +53,3 @@ Update flake dependencies:
 ```bash
 nix flake update
 ```
-
-## Notes
-
-This configuration is a work in progress. More applications and dotfiles will be managed through Home Manager over time.
