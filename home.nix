@@ -4,6 +4,7 @@
   imports = [
     ./home/programs/git.nix
     ./home/programs/foot.nix
+    ./home/programs/waybar.nix
   ];
 
   home.username = "fabio";

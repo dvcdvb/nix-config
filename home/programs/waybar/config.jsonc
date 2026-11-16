@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+
+    "modules-left": [
+        "sway/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "sway/language",
+	"network",
+        "pulseaudio",
+        "battery",
+        "backlight",
+        "tray"
+    ],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "network": {
+    	"format-wifi": "wifi: connected",
+    	"format-ethernet": "lan",
+    	"format-disconnected": "wifi: offline",
+    	"tooltip-format-wifi": "{essid}\nSignal: {signalStrength}%\nIP: {ipaddr}",
+    	"on-click": "nm-connection-editor"
+},
+
+    "clock": {
+        "interval": 1,
+        "format": "[ {:%H:%M  %A, %b %d} ]",
+        "tooltip-format": "{:%Y-%m-%d}"
+    },
+
+    "sway/language": {
+        "format": "key: {shortDescription}"
+    },
+
+    "pulseaudio": {
+        "format": "vol: {volume}%",
+        "format-muted": "vol: mute",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pamixer --increase 5",
+        "on-scroll-down": "pamixer --decrease 5"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+
+        "format": "bat: {capacity}%",
+        "format-charging": "bat: {capacity}%+"
+    },
+
+    "backlight": {
+        "format": "mon: {percent}%"
+    },
+
+    "tray": {
+        "spacing": 8
+    }
+}

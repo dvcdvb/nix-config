@@ -1,0 +1,138 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+
+    min-height: 0;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+window#waybar {
+    background: #111111;
+    color: #cdd6f4;
+
+    border: none;
+    border-radius: 0;
+}
+
+/* Normale Workspaces */
+#workspaces button {
+    background: transparent;
+    color: #a6adc8;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0 10px;
+}
+
+/* Aktiver Workspace */
+#workspaces button.focused,
+#workspaces button.active {
+    background: #ffffff;
+    color: #111111;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Andere sichtbare Workspaces */
+#workspaces button.visible:not(.focused):not(.active) {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+/* Sichtbare, aber nicht fokussierte Workspaces */
+#workspaces button.visible {
+    color: #cdd6f4;
+}
+
+/* Dringende Workspaces */
+#workspaces button.urgent {
+    background: #f38ba8;
+    color: #111111;
+}
+
+/* Workspaces */
+
+#workspaces {
+    background: transparent;
+    margin: 0;
+    padding: 0 10px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #a6adc8;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    margin: 0;
+    padding: 0 8px;
+}
+
+#workspaces button.focused {
+    background: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.visible {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+#workspaces button.urgent {
+    background: transparent;
+    color: #f38ba8;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+/* Aktiven Workspace weiss hervorheben */
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #ffffff;
+    background-image: none;
+    color: #111111;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Andere Workspaces */
+#workspaces button:not(.focused):not(.active) {
+    background-color: transparent;
+}
+
+/* Module */
+
+#clock,
+#language,
+#pulseaudio,
+#network,
+#battery,
+#backlight,
+#tray {
+    background: transparent;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    margin: 0;
+    padding: 0 6px;
+
+    color: #cdd6f4;
+}
+
+/* Rechte Seite */
+
+#tray {
+    padding-right: 10px;
+}
